@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="https://freepngimg.com/save/55655-gaming-download-hd-png/512x512" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="startbox ">
+        <div class="heading">
+            <span class="txt1">TIC</span>
+            <span class="txt2">TAC</span>
+            <span class="txt3">TOE</span>
+        </div>
+        <div class="coverimg">
+            <img src="New Project (1).png">
+        </div>
+        <div class="startbtn">
+           <button>Let's Play</button>
+        </div>
+    </div>
+
+
+    <div class="select-box hide">
+        <p>Tic Tac Toe</p>
+        <div class="content">
+            <div class="msg">Select Which you want to be :</div>
+            <div class="option">
+                <button class="playerx" value="X" >Player X </button>
+                <button class="playero" value="O">Player O</button>
+            </div>
+            <div class="msg">Select Opponent Type :</div>
+            <div class="player-type">
+                <button class="opponent-btn AI" value="ai" >Computer</button>
+                <button class="opponent-btn Human" value="dost">Friend</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container hide">
+        <div class="turn-container">
+            <div class="symbol">
+                  <i class="fa fa-close "></i>
+                  <i class="fa fa-circle-o"></i>
+                  <div class="slider"></div>
+            </div>
+            <div class="turn">
+                <span class="current-turn"></span>&nbsp; Turn</div>
+            <div class="reset">
+                <button><i class="fa fa-rotate-right"></i></button>
+            </div>
+        </div>
+        <div class="board">
+            <div class="cells">
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+            </div>
+            <div class="cells">
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+            </div>
+            <div class="cells">
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="player">
+                <label>Player X</label>
+                <span class="score1">0</span>
+            </div>
+            <div class="draws">
+                <label for="">Draws</label>
+                <span class="draw">0</span>
+            </div>
+            <div class="player">
+                <label>Player O</label>
+                <span class="score2">0</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay hide">
+        <div class="message">
+            <div class="close">
+                <i class="fa fa-close"></i>
+             </div>
+            <div class="winnername">
+             <!-- Player  &nbsp;&nbsp;<span class="winner">   </span>&nbsp;&nbsp;Won -->
+            </div>
+            <div class="trophy">
+            </div>
+            <div class="quit">
+                 <button>QUIT</button>
+            </div>
+        </div>
+    </div>
+   <script src="main.js"></script>
+</body>
+</html>
